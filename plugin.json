@@ -1,0 +1,38 @@
+{
+  "preload": "preload.js",
+  "logo": "logo.png",
+  "features": [
+    {
+      "code": "c2u",
+      "explain": "驼峰转下划线",
+      "cmds": [
+        {
+          "type": "regex",
+          "match": "/^[a-z]+(?:[A-Z][a-z]+)+$/g",
+          "label": "驼峰转下划线"
+        }
+      ]
+    },
+    {
+      "code": "u2c",
+      "explain": "下划线转驼峰",
+      "cmds": [
+        {
+          "type": "regex",
+          "match": "/^[a-z]+(?:_[a-z]+)+$/g",
+          "label": "下划线转驼峰"
+        }
+      ]
+    },
+    {
+      "code": "c2uList",
+      "explain": "驼峰转下划线",
+      "cmds": ["驼峰转下划线", "c2u"]
+    },
+    {
+      "code": "u2cList",
+      "explain": "下划线转驼峰",
+      "cmds": ["下划线转驼峰", "u2c"]
+    }
+  ]
+}
